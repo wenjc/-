@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <script src="./js/jQuery-3.3.1.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <title>Document</title>
+    <style>
+        main {
+            background: url(./images/banner.jpg)no-repeat center 0;
+        }
+
+        /* head-cont */
+        .head-cont {
+            height: 500px;
+            margin-bottom: 40px;
+        }
+
+        .head-cont>.head-one {
+            margin-top: 160px;
+        }
+
+        .head-cont .head-first {
+            color: white;
+            font-weight: bold;
+            font-size: 40px;
+        }
+
+        .head-cont .head-second {
+            color: #ccc;
+        }
+
+        /* main-cont */
+        .main-cont {
+            margin-bottom: 150px;
+        }
+
+        .main-cont .main-first {
+            margin-bottom: 10px;
+            line-height: 36px;
+            color: #6ea145;
+            font-size: 30px;
+        }
+
+        .main-cont .main-second {
+            line-height: 1.5em;
+            color: #c96c2f;
+            font-size: 16px;
+            margin-bottom: 6px;
+        }
+
+        .main-cont .main-third {
+            line-height: 26px;
+            color: #999;
+            margin-bottom: 20px
+        }
+
+        img {
+            width: 100%;
+        }
+
+        .item-first {
+            margin-bottom: 30px;
+        }
+        /* main-inp */
+        .main-inp{
+            margin-top: 50px;
+            padding: 60px 0 40px 0;
+            background: #E6E6E6;
+        }
+        .btn-success {
+            width: 150px;
+        }
+        h2{
+            color: #6ea145;
+            line-height: 1em;
+            margin-top: 0;
+        }
+    </style>
+    <script>
+        $(function () {
+            $('header').load('header.html');
+            $('footer').load('footer.html');
+        })
+    </script>
+</head>
+
+<body>
+    <main>
+        <header></header>
+        <div class="head-cont container">
+            <div class="head-one col-sm-8 col-sm-offset-3">
+                <div class="col-sm-12 head-first">Feeling The Life In A Different Way</div>
+                <div class="col-sm-9 head-second">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                    accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et
+                    quasi architecto beatae vitae dicta sunt explicabo.</div>
+                <div class="col-sm-4"><button type="button" class="btn btn-success">Learn　More</button></div>
+            </div>
+        </div>
+        <div class="main-cont container clearfix">
+            <div class="row clearfix">
+                <div class="col-md-5 col-sm-12 clearfix">
+                    <img class="col-sm-12" src="./images/1.jpg">
+                </div>
+                <div class="col-md-7 col-sm-12 clearfix">
+                    <div class="col-sm-10 main-first">Nisi Ut Aliquid Ex Ea Commodi Consequatur</div>
+                    <div class="col-sm-12 main-second">MAGNAM ALIQUAM QUAERAT VOLUPTATEM QUIS</div>
+                    <div class="col-sm-12 main-third">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
+                        consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore
+                        magnam aliquam quaerat voluptatem quis autem vel eum iure reprehenderit qui in ea voluptate
+                        velit esse quam nihil molestiae consequatur.</div>
+                    <div class="col-sm-4"><button type="button" class="btn btn-success">Learn　More</button></div>
+                </div>
+            </div>
+        </div>
+        <div class="scale-img container">
+            <div class="row">
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail">
+                        <img src="./images/i_2.jpg" alt="...">
+                        <div class="caption">
+                            <h3>Magnam Aliquam Quaerat Voluptatem Quis Dolorem</h3>
+                            <p>Neque porro quisquam est,reprehenderit qui in ea voluptate velit esse qui dolorem ipsum
+                                quia dolor sit amet, consectetur, adipisci velit.</p>
+                            <p><a href="#" class="btn btn-success" role="button">Learn　More</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail">
+                        <img src="./images/i_1.jpg" alt="...">
+                        <div class="caption">
+                            <h3>Magnam Aliquam Quaerat Voluptatem Quis Dolorem</h3>
+                            <p>Neque porro quisquam est,reprehenderit qui in ea voluptate velit esse qui dolorem ipsum
+                                quia dolor sit amet, consectetur, adipisci velit.</p>
+                            <p><a href="#" class="btn btn-success" role="button">Learn　More</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail">
+                        <img src="./images/i_3.jpg" alt="...">
+                        <div class="caption">
+                            <h3>Magnam Aliquam Quaerat Voluptatem Quis Dolorem</h3>
+                            <p>Neque porro quisquam est,reprehenderit qui in ea voluptate velit esse qui dolorem ipsum
+                                quia dolor sit amet, consectetur, adipisci velit.</p>
+                            <p><a href="#" class="btn btn-success" role="button">Learn　More</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-banner container">
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                </ol>
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <div class="item-first clearfix">
+                            <div class="item-one col-sm-6">
+                                <div class="row">
+                                    <img class="" src="./images/xn_banner/11.jpg">
+                                </div>
+                            </div>
+                            <div class="item-two col-sm-6">
+                                <div class="row">
+                                    <img src="./images/xn_banner/31.jpg">
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="item-two col-sm-4">
+                                <div class="row">
+                                    <img src="./images/xn_banner/14.png">
+                                </div>
+                            </div>
+                            <div class="item-two col-sm-4">
+                                <div class="row">
+                                    <img src="./images/xn_banner/15.png">
+                                </div>
+                            </div>
+                            <div class="item-two col-sm-4">
+                                <div class="row">
+                                    <img src="./images/xn_banner/11.jpg">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-first clearfix">
+                            <div class="item-one col-sm-6 col-xs-12">
+                                <div class="row">
+                                    <img class="" src="./images/xn_banner/31.jpg">
+                                </div>
+                            </div>
+                            <div class="item-two col-sm-6 col-xs-12">
+                                <div class="row">
+                                    <img src="./images/xn_banner/34.png">
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="item-two col-sm-4  col-xs-12">
+                                <div class="row">
+                                    <img src="./images/xn_banner/15.png">
+                                </div>
+                            </div>
+                            <div class="item-two col-sm-4 col-xs-12">
+                                <div class="row">
+                                    <img src="./images/xn_banner/35.png">
+                                </div>
+                            </div>
+                            <div class="item-two col-sm-4 col-xs-12">
+                                <div class="row">
+                                    <img src="./images/xn_banner/34.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-first clearfix">
+                            <div class="item-one col-sm-6">
+                                <div class="row">
+                                    <img class="" src="./images/xn_banner/34.png">
+                                </div>
+                            </div>
+                            <div class="item-two col-sm-6">
+                                <div class="row">
+                                    <img src="./images/xn_banner/35.png">
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="item-two col-sm-4">
+                                <div class="row">
+                                    <img src="./images/xn_banner/31.jpg">
+                                </div>
+                            </div>
+                            <div class="item-two col-sm-4">
+                                <div class="row">
+                                    <img src="./images/xn_banner/11.jpg">
+                                </div>
+                            </div>
+                            <div class="item-two col-sm-4">
+                                <div class="row">
+                                    <img src="./images/xn_banner/14.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-inp container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <h2>Keep In Touch</h2>
+                        <p>We Will give you latest information about spa.</p>
+                    </div>
+                    <div class="col-sm-8">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="input-group input-group-lg">
+                                    <input type="text" class="form-control" placeholder="Enter Your Mail...">
+                                    <div class="input-group-btn ">
+                                        <button class="btn btn-default btn-success" type="button"><span
+                                                class="glyphicon glyphicon-chevron-right"></span></button>
+                                    </div>
+                                </div>
+                            </div><!-- /input-group -->
+                        </div><!-- /.col-lg-6 -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer></footer>
+</body>
+
+</html>

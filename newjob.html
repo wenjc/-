@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="./css/bootstrap.css">
+    <script src="./js/jQuery-3.3.1.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script> -->
+
+    <style>
+        a {
+            color: white;
+        }
+
+        a:hover {
+            color: white;
+            text-decoration: none;
+        }
+
+        .header_wrap {
+            height: 300px;
+            background: url(./images/banner.jpg)no-repeat center top;
+        }
+
+        /* menu */
+        .header_menu>ul>li>a {
+            font-size: 16px;
+            color: white;
+            margin-left: 10px;
+            line-height: 1.5em;
+            padding: 35px 25px;
+            position: relative;
+        }
+
+        .header_menu>ul>li>a::before {
+            content: '';
+            position: absolute;
+            z-index: 0;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: #6ea145;
+            transform-origin: 50% 0;
+            transform: scaleY(0);
+            transition: all 1s;
+        }
+
+        .one {
+            width: 100%;
+        }
+
+        .nav {
+            z-index: 2;
+            position: relative;
+        }
+
+        .nav>li>a:hover,
+        .nav>li>a:focus {
+            color: white;
+            background-color: transparent !important;
+        }
+
+        .header_menu>.nav>li>a:hover::before {
+            transform: scaleY(1);
+        }
+
+        .navbar-nav>.active>a,.navbar-nav>.active>a:hover {
+            color: white;
+            background-color: #6ea145 !important;
+        }
+
+        .menu_btn .navbar-toggle {
+            position: absolute;
+            top: 50px;
+            left: 52%;
+            right: 0;
+            transform: translate(-50%);
+        }
+
+        /* logo */
+        .header_logo {
+            width: 150px;
+            height: 150px;
+            background: gray;
+            padding: 30px 0;
+        }
+
+        .header_logo .icon {
+            font-size: 30px;
+            line-height: 50px;
+        }
+
+        /* share */
+        .header-icon {
+            padding-top: 60px;
+        }
+
+        .header-icon .pull-left {
+            width: 30px;
+            height: 30px;
+            background: url(./images/icon-tb.png) no-repeat -6px -13px;
+            margin-right: 5px;
+        }
+
+        /*  */
+        @media (max-width: 992px) {
+            .header_menu .nav li a {
+                width: 100%;
+                padding: 1em 0;
+            }
+        }
+
+        @media (max-width: 992px) {
+            .header_menu .nav li {
+                padding: 0;
+                margin-left: 0;
+                background: #C6C5C0;
+            }
+        }
+    </style>
+    <script>
+        $(function () {
+            var hash = window.location.hash.slice(1);
+            $('.nav>li').on('click', function () {
+                $('.nav>li').removeClass('active');
+                $('.nav>li').eq(hash).addClass('active');
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <div class="header_wrap ">
+        <div class="container">
+            <a class="logo pull-left" href="#">
+                <div class="header_logo text-center">
+                    <p class="icon">
+                        <span class="glyphicon glyphicon-leaf"></span>
+                        <span>Spa</span>
+                    </p>
+                    <p>Magic Of Soul</p>
+                </div>
+            </a>
+            <div class="header-icon pull-right">
+                <div class="pull-left"></div>
+                <div class="pull-left"></div>
+                <div class="pull-left"></div>
+            </div>
+            <div class="header_menu">
+                <div class="menu_btn visible-xs clearfix">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <img class="center-block" src="./images/menu.png" alt="">
+                    </button>
+                </div>
+                <ul class="nav navbar-nav collapse navbar-collapse" id="ul_lis bs-example-navbar-collapse-1">
+                    <li class="active"><a href="index.html#0">
+                            <p class="glyphicon center-block text-center">Home</p>
+                            <p class="one glyphicon glyphicon-home text-center"></p>
+                        </a></li>
+                    <li><a href="services.html#1">
+                            <p class="glyphicon center-block text-center">Services</p>
+                            <p class="one glyphicon glyphicon-hand-right text-center"></p>
+                        </a></li>
+                    <li><a href="about.html#2">
+                            <p class="glyphicon center-block text-center">About</p>
+                            <p class="one glyphicon glyphicon-star-empty text-center"></p>
+                        </a></li>
+                    <li><a href="blog.html#3">
+                            <p class="glyphicon center-block text-center">Blog</p>
+                            <p class="one glyphicon glyphicon-picture text-center"></p>
+                        </a></li>
+                    <li><a href="contact.html#4">                                                   
+                            <p class="glyphicon center-block text-center">Contact</p>
+                            <p class="one glyphicon glyphicon-picture text-center"></p>
+                        </a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
